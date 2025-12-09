@@ -35,18 +35,18 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-white text-[#4A4A4A]">
+    <section id="services" className="py-20 bg-[#2D2D2D] text-[#F5E6E0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-[#F4B6A6]">Services</h2>
-          <p className="text-[#CFCFCF] text-lg">What I can do for you</p>
+          <h2 className="text-4xl font-bold mb-4 text-[#D4A5A5]">Services</h2>
+          <p className="text-[#B8A9A9] text-lg">What I can do for you</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-[#FFF7F2] rounded-lg p-6 hover:shadow-lg transition duration-300 border border-[#F4B6A6]">
+            <div key={index} className="bg-[#3D3D3D] rounded-lg p-6 hover:shadow-lg hover:shadow-[#D4A5A5]/20 transition duration-300 border border-[#D4A5A5]/30">
               <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-3 text-[#E89B8C]">{service.title}</h3>
-              <p className="text-[#4A4A4A]">{service.description}</p>
+              <h3 className="text-xl font-semibold mb-3 text-[#C48B8B]">{service.title}</h3>
+              <p className="text-[#E8D8D8]">{service.description}</p>
             </div>
           ))}
         </div>

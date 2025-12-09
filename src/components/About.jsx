@@ -7,25 +7,25 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-[#FFF7F2] text-[#4A4A4A]">
+    <section id="about" className="py-20 bg-[#3D3D3D] text-[#F5E6E0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-[#F4B6A6]">About Me</h2>
-          <p className="text-[#CFCFCF] text-lg">Get to know me better</p>
+          <h2 className="text-4xl font-bold mb-4 text-[#D4A5A5]">About Me</h2>
+          <p className="text-[#B8A9A9] text-lg">Get to know me better</p>
         </div>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h3 className="text-2xl font-semibold mb-4 text-[#E89B8C]">I'm a Full Stack Developer</h3>
-            <p className="text-[#4A4A4A] leading-relaxed">
+            <h3 className="text-2xl font-semibold mb-4 text-[#C48B8B]">I'm a Full Stack Developer</h3>
+            <p className="text-[#E8D8D8] leading-relaxed">
               With over 2 years of experience in web development. I specialize in creating robust and scalable applications. I'm passionate about clean code, user experience, and staying up-to-date with the latest technologies. When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.
             </p>
           </div>
           <div>
-            <h3 className="text-2xl font-semibold mb-4 text-[#E89B8C]">Skills & Technologies</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-[#C48B8B]">Skills & Technologies</h3>
             <div className="grid grid-cols-2 gap-4">
               {skills.map((skill, index) => (
-                <div key={index} className="bg-white rounded-lg p-4 text-center shadow-md border border-[#F4B6A6]">
-                  <span className="text-[#F4B6A6] font-medium">{skill}</span>
+                <div key={index} className="bg-[#2D2D2D] rounded-lg p-4 text-center shadow-md border border-[#D4A5A5]">
+                  <span className="text-[#D4A5A5] font-medium">{skill}</span>
                 </div>
               ))}
             </div>

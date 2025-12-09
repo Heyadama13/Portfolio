@@ -53,16 +53,16 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-20 bg-[#FFF7F2] text-[#4A4A4A]">
+    <section id="portfolio" className="py-20 bg-[#3D3D3D] text-[#F5E6E0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-[#F4B6A6]">Portfolio</h2>
-          <p className="text-[#CFCFCF] text-lg">Some of my recent work</p>
+          <h2 className="text-4xl font-bold mb-4 text-[#D4A5A5]">Portfolio</h2>
+          <p className="text-[#B8A9A9] text-lg">Some of my recent work</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-lg overflow-hidden hover:scale-105 transition duration-300 shadow-md border border-[#F4B6A6]">
-              <div className="h-48 bg-[#FFF7F2] flex items-center justify-center overflow-hidden">
+            <div key={index} className="bg-[#2D2D2D] rounded-lg overflow-hidden hover:scale-105 transition duration-300 shadow-md border border-[#D4A5A5]/30">
+              <div className="h-48 bg-[#3D3D3D] flex items-center justify-center overflow-hidden">
                 {project.image ? (
                   <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
                 ) : (
@@ -70,16 +70,16 @@ const Portfolio = () => {
                 )}
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-[#E89B8C]">{project.title}</h3>
-                <p className="text-[#4A4A4A] mb-4">{project.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-[#C48B8B]">{project.title}</h3>
+                <p className="text-[#E8D8D8] mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="bg-[#F4B6A6] text-white text-xs px-2 py-1 rounded">
+                    <span key={techIndex} className="bg-[#D4A5A5] text-[#2D2D2D] text-xs px-2 py-1 rounded">
                       {tech}
                     </span>
                   ))}
                 </div>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-[#F4B6A6] hover:text-[#E89B8C] font-medium">
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-[#D4A5A5] hover:text-[#C48B8B] font-medium">
                   View Project →
                 </a>
               </div>
